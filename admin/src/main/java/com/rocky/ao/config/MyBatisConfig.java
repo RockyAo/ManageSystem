@@ -24,7 +24,7 @@ public class MyBatisConfig {
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setTypeAliasesPackage("com.rocky.ao.**.model");
+        sessionFactory.setTypeAliasesPackage("com.rocky.ao.**.model.entity");
 
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 
