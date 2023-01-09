@@ -8,9 +8,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2023/1/9 13:43
  * @description
  */
-@ConfigurationProperties(prefix = "spring.datasource.druid")
 @Data
+@ConfigurationProperties(prefix = "spring.datasource.druid")
 public class DruidDataSourceProperties {
+
     private String driverClassName;
     private String url;
     private String username;

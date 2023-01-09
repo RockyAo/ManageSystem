@@ -3,11 +3,10 @@ spring:
     name: druidDataSource
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      master:
-        url: jdbc:mysql://localhost:3306/platform?autoReconnect=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&useSSL=false
-        name: platform
-        username: root
-        password: root
+      url: jdbc:mysql://localhost:3306/platform?autoReconnect=true&characterEncoding=utf-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&useSSL=false
+      name: platform
+      username: root
+      password: root
       filters: stat, wall, log4j, config
       max-active: 100
       initial-size: 1
@@ -22,3 +21,16 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
+
+mybatis:
+  #  dataCenterId: 3
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  global-config:
+    banner: off
+    #    db-config:
+    # 主键生成策略
+#      id-type: assign_id

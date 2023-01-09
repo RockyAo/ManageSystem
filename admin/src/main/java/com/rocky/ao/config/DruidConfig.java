@@ -1,17 +1,13 @@
 package com.rocky.ao.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import java.sql.SQLException;
 import javax.servlet.Filter;
 import javax.servlet.Servlet;
-import javax.sql.DataSource;
 import lombok.AllArgsConstructor;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -27,13 +23,16 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties({DruidDataSourceProperties.class})
 @AllArgsConstructor
 public class DruidConfig {
+    
     private final DruidDataSourceProperties properties;
 
     @Bean
     @ConditionalOnMissingBean
-    public DataSource druidDataSource() {
+    public DruidDataSource druidDataSource() {
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName(properties.getDriverClassName());
+        System.out.println(properties.getUrl());
+
         druidDataSource.setUrl(properties.getUrl());
         druidDataSource.setUsername(properties.getUsername());
         druidDataSource.setPassword(properties.getPassword());
@@ -48,7 +47,8 @@ public class DruidConfig {
         druidDataSource.setTestOnBorrow(properties.isTestOnBorrow());
         druidDataSource.setTestOnReturn(properties.isTestOnReturn());
         druidDataSource.setPoolPreparedStatements(properties.isPoolPreparedStatements());
-        druidDataSource.setMaxPoolPreparedStatementPerConnectionSize(properties.getMaxPoolPreparedStatementPerConnectionSize());
+        druidDataSource.setMaxPoolPreparedStatementPerConnectionSize(
+            properties.getMaxPoolPreparedStatementPerConnectionSize());
 
         try {
             druidDataSource.setFilters(properties.getFilters());
@@ -68,7 +68,8 @@ public class DruidConfig {
     @Bean
     @ConditionalOnMissingBean
     public ServletRegistrationBean<Servlet> druidServlet() {
-        ServletRegistrationBean<Servlet> servletRegistrationBean = new ServletRegistrationBean<Servlet>(new StatViewServlet(), "/druid/*");
+        ServletRegistrationBean<Servlet> servletRegistrationBean = new ServletRegistrationBean<Servlet>(
+            new StatViewServlet(), "/druid/*");
 
         //白名单：
 //        servletRegistrationBean.addInitParameter("allow","127.0.0.1,139.196.87.48");

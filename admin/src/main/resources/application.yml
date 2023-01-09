@@ -1,2 +1,10 @@
 server:
   port: 8001
+  tomcat:
+    uri-encoding: UTF-8
+  
+  shutdown: graceful
+
+spring:
+  profiles:
+    include: application, datasource
