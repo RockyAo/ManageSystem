@@ -5,34 +5,36 @@
     <artifactId>admin</artifactId>
     <dependencies>
         <dependency>
+            <groupId>com.rocky.ao</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
             <artifactId>springfox-boot-starter</artifactId>
             <groupId>io.springfox</groupId>
-            <version>3.0.0</version>
         </dependency>
 
         <dependency>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <groupId>org.mybatis.spring.boot</groupId>
-            <version>${mybatis.version}</version>
         </dependency>
 
         <!-- mybatis plus -->
         <dependency>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <groupId>com.baomidou</groupId>
-            <version>${mybatis-plus.version}</version>
         </dependency>
 
         <dependency>
             <artifactId>mysql-connector-java</artifactId>
             <groupId>mysql</groupId>
-            <version>${mysql-connector.version}</version>
+
         </dependency>
 
         <dependency>
             <artifactId>druid-spring-boot-starter</artifactId>
             <groupId>com.alibaba</groupId>
-            <version>${druid.version}</version>
         </dependency>
 
 
@@ -41,13 +43,11 @@
             <artifactId>lombok</artifactId>
             <groupId>org.projectlombok</groupId>
             <scope>provided</scope>
-            <version>${lombok.verison}</version>
         </dependency>
 
         <dependency>
             <artifactId>log4j</artifactId>
             <groupId>log4j</groupId>
-            <version>${log4j.version}</version>
         </dependency>
 
     </dependencies>
@@ -61,12 +61,7 @@
     </parent>
 
     <properties>
-        <druid.version>1.1.10</druid.version>
-        <log4j.version>1.2.12</log4j.version>
-        <lombok.verison>1.18.24</lombok.verison>
-        <mybatis-plus.version>3.4.2</mybatis-plus.version>
-        <mybatis.version>2.1.0</mybatis.version>
-        <mysql-connector.version>8.0.30</mysql-connector.version>
+
     </properties>
 
 </project>
