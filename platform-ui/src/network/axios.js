@@ -12,7 +12,6 @@ export default function $axios (options) {
       timeout: config.timeout,
       withCredentials: config.withCredentials
     })
-    
     // request interceptors
     instance.interceptors.request.use(
       config => {
