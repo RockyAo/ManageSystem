@@ -36,6 +36,7 @@
         <mybatis-plus.version>3.4.2</mybatis-plus.version>
         <mybatis.version>2.1.0</mybatis.version>
         <mysql-connector.version>8.0.30</mysql-connector.version>
+        <page-helper.version>1.2.5</page-helper.version>
     </properties>
 
     <dependencies>
@@ -100,6 +101,13 @@
                 <artifactId>log4j</artifactId>
                 <groupId>log4j</groupId>
                 <version>${log4j.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${page-helper.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

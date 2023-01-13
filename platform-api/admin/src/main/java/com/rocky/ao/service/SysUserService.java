@@ -10,7 +10,7 @@ import java.util.List;
  * @author yun.ao
  * @since 2023-01-09 10:47:57
  */
-public interface SysUserService extends IService<SysUser> {
+public interface SysUserService extends CurdService<SysUser> {
     List<SysUser> findAll();
 }
 

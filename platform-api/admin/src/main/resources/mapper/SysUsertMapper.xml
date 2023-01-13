@@ -24,10 +24,15 @@
     </sql>
 
     <select id="findAll" resultMap="BaseResultMap">
-        select
+        SELECT
         <include refid="Base_Column_List"/>
-        from sys_user
+        FROM sys_user
     </select>
 
+    <select id="findPage" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user
+    </select>
 
 </mapper>

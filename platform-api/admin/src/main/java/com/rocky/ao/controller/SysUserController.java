@@ -1,7 +1,9 @@
 package com.rocky.ao.controller;
 
 
+import com.rocky.ao.http.Response;
 import com.rocky.ao.model.entity.SysUser;
+import com.rocky.ao.page.PageRequest;
 import com.rocky.ao.service.SysUserService;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
-@RequestMapping("sysUser")
+@RequestMapping("user")
 @AllArgsConstructor
 public class SysUserController {
 
@@ -21,6 +23,11 @@ public class SysUserController {
     @GetMapping("all")
     public List<SysUser> findAll() {
         return sysUserService.findAll();
+    }
+
+    @PostMapping("findPage")
+    public Response<?> findPage(@RequestBody PageRequest pageRequest) {
+        return Response.onSuccess(sysUserService.findPage(pageRequest));
     }
 }
 

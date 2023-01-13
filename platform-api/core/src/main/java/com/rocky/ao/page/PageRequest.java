@@ -14,7 +14,7 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @ToString
 @Accessors(chain = true)
-public class PageRequest<T> {
+public class PageRequest {
 
     /**
      * current page index
@@ -28,5 +28,5 @@ public class PageRequest<T> {
     /**
      * request parameters
      */
-    private T parameters;
+    private Object parameters;
 }
