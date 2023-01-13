@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279814ab-c103-4adc-b543-6546d859e26d" name="Changes" comment="public common functions and frontend pages">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/rocky/ao/utils/DateTimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/rocky/ao/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/AdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.11173183",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "settings.saveactions",
     "spring.configuration.checksum": "e26ebe46760d9c5a9deb89008a8f6711",
     "vue.rearranger.settings.migration": "true"
   },
@@ -105,7 +100,8 @@
       <workItem from="1673319932043" duration="7780000" />
       <workItem from="1673500522532" duration="7777000" />
       <workItem from="1673588691532" duration="4000" />
-      <workItem from="1673588750843" duration="2243000" />
+      <workItem from="1673588750843" duration="2412000" />
+      <workItem from="1673592355715" duration="727000" />
     </task>
     <servers />
   </component>
