@@ -1,8 +1,5 @@
 package com.rocky.ao.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.github.pagehelper.PageHelper;
 import com.rocky.ao.mapper.SysUserMapper;
 import com.rocky.ao.model.entity.SysUser;
 import com.rocky.ao.page.MybatisPageHelper;
@@ -13,7 +10,6 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 用户管理(SysUser)表服务实现类
@@ -25,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 @AllArgsConstructor
 public class SysUserServiceImpl implements SysUserService {
+
     private final SysUserMapper userMapper;
 
     @Override
@@ -53,7 +50,7 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     @Override
-    public <R> PageResult findPage(PageRequest request) {
+    public PageResult findPage(PageRequest request) {
         return MybatisPageHelper.findPage(request, userMapper);
     }
 }
