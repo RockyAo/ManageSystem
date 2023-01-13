@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279814ab-c103-4adc-b543-6546d859e26d" name="Changes" comment="public common functions and frontend pages">
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../platform-ui/src/views/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../platform-ui/src/views/404.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1673500522532" duration="7777000" />
       <workItem from="1673588691532" duration="4000" />
       <workItem from="1673588750843" duration="2412000" />
-      <workItem from="1673592355715" duration="2997000" />
+      <workItem from="1673592355715" duration="3587000" />
     </task>
     <servers />
   </component>
