@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="279814ab-c103-4adc-b543-6546d859e26d" name="Changes" comment="public common functions and frontend pages">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/resources/mapper/SysDictMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/controller/SysDictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/controller/SysDictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/mapper/SysDictMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/mapper/SysDictMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/SysDictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/SysDictService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysDictServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysDictServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/rocky/ao/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/rocky/ao/service/CurdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/rocky/ao/service/CurdService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,7 @@
       <workItem from="1673500522532" duration="7777000" />
       <workItem from="1673588691532" duration="4000" />
       <workItem from="1673588750843" duration="2412000" />
-      <workItem from="1673592355715" duration="2751000" />
+      <workItem from="1673592355715" duration="2997000" />
     </task>
     <servers />
   </component>
