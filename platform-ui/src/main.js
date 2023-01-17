@@ -7,6 +7,7 @@ import router from './router'
 import 'element-ui/lib/theme-chalk/index.css'
 import api from './network'
 import gloabl from '@/utils/global'
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.config.productionTip = false
 
