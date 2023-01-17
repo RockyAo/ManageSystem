@@ -7,7 +7,7 @@
 
 <script>
 // eslint-disable-next-line
-import mock from '@/mock/mock.js'
+import mock from '@/mock/index.js'
 import router from '@/router'
 import Cookies from 'js-cookie'
 
