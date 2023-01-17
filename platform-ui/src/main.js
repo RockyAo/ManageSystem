@@ -5,10 +5,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'element-ui/lib/theme-chalk/index.css'
+import api from './network'
+import gloabl from '@/utils/global'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+
+Vue.use(api)
+
+Vue.prototype.gloabl = gloabl
 
 /* eslint-disable no-new */
 new Vue({
