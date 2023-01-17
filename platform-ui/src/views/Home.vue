@@ -5,6 +5,9 @@
     <el-button type="primary" @click="testAxios()">测试 Axios </el-button>
     <el-button type="primary" @click="getUser()">Get User </el-button>
     <el-button type="primary" @click="getMenu()">Get Menu </el-button>
+    <h3>{{$t('common.doc')}}</h3>
+    <el-button type="success" @click="changeLanguage('zh_cn')">简体中文</el-button>
+    <el-button type="success" @click="changeLanguage('en_us')">English</el-button>
   </div>
 </template>
 
@@ -33,6 +36,12 @@ export default {
       axios.get('http://localhost:8080/menu').then(res => {
         alert(JSON.stringify(res.data))
       })
+    },
+
+    changeLanguage(lang) {
+      lang === '' ? 'zh_cn' : lang
+      this.$i18n.locale = lang
+      this.langVisible = false
     }
   }
 }

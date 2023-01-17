@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import api from './network'
 import gloabl from '@/utils/global'
 import 'font-awesome/css/font-awesome.min.css'
+import i18n from './i18n'
 
 Vue.config.productionTip = false
 
@@ -22,5 +23,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  i18n
 })
