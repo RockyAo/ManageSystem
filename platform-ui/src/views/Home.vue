@@ -1,49 +1,32 @@
 <template>
-  <div class="page">
-    <h2>Home page</h2>
-    <li class="fa fa-home fa-lg"></li>
-    <el-button type="primary" @click="testAxios()">测试 Axios </el-button>
-    <el-button type="primary" @click="getUser()">Get User </el-button>
-    <el-button type="primary" @click="getMenu()">Get Menu </el-button>
-    <h3>{{$t('common.doc')}}</h3>
-    <el-button type="success" @click="changeLanguage('zh_cn')">简体中文</el-button>
-    <el-button type="success" @click="changeLanguage('en_us')">English</el-button>
-  </div>
+  <div class="container">
+   <nav-bar></nav-bar>
+   <head-bar></head-bar>
+   <main-content></main-content>
+</div>
+
 </template>
 
 <script>
 import axios from 'axios'
 // eslint-disable-next-line
 import mock from '@/mock/index.js'
+import NavBar from './NavBar.vue'
+import HeadBar from './HeadBar.vue'
+import MainContent from './MainContent.vue'
 
 export default {
-  name: 'Home',
-  methods: {
-    testAxios () {
-      axios.get('http://localhost:8080')
-        .then(res => {
-          alert(res.data)
-        })
-    },
-
-    getUser () {
-      axios.get('http://localhost:8080/user').then(res => {
-        alert(JSON.stringify(res.data))
-      })
-    },
-
-    getMenu () {
-      axios.get('http://localhost:8080/menu').then(res => {
-        alert(JSON.stringify(res.data))
-      })
-    },
-
-    changeLanguage(lang) {
-      lang === '' ? 'zh_cn' : lang
-      this.$i18n.locale = lang
-      this.langVisible = false
-    }
-  }
+  components: { NavBar, HeadBar, MainContent }
 }
 
 </script>
+
+<style lang="scss" scoped>
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+</style>
