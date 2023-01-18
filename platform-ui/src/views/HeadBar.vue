@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div class="headbar" style="background:#14889A" :class="'position-left'">
     <!-- 工具栏 -->
     <span class="toolbar">
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import mock from "@/mock/index"
 export default {
   data() {
     return {
@@ -33,10 +32,10 @@ export default {
     }
   },
   mounted() {
-    var user = sessionStorage.getItem("user")
+    var user = sessionStorage.getItem('user')
     if (user) {
       this.user.name = user
-      this.user.avatar = require("@/assets/user.png")
+      this.user.avatar = require('@/assets/user.png')
     }
   }
 }

@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 // eslint-disable-next-line
 import mock from '@/mock/index.js'
 import NavBar from './NavBar.vue'

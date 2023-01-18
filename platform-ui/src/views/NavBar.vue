@@ -1,11 +1,11 @@
 <template>
-	<div class="menu-bar-container">
+  <div class="menu-bar-container">
     <!-- logo -->
     <div class="logo" style="background:#14889A" :class="'menu-bar-width'"
         @click="$router.push('/')">
         <img src="@/assets/logo.png"/> <div>Platform-UI</div>
     </div>
-	</div>
+  </div>
 </template>
 
 <script>
@@ -25,7 +25,7 @@ export default {
   .logo {
     position:absolute;
     top: 0px;
-    height: 60px;   
+    height: 60px;
     line-height: 60px;
     background: #545c64;
     cursor:pointer;
