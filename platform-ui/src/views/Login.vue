@@ -61,12 +61,19 @@ export default {
   },
   methods: {
     login() {
-      this.$api.login.login().then((res) => {
-        alert(res.token)
-        Cookies.set('token', res.token)
-        router.push('/')
+      this.loading = true
+      let userInfo = { account: this.loginForm.account, password: this.loginForm.password, captcha: this.loginForm.captcha }
+      this.$api.login.login(userInfo).then((res) => {
+        if (res.msg != null) {
+          this.$message({ message: res.msg, type: 'error' })
+        } else {
+          alert(res.token)
+          Cookies.set('token', res.token)
+          sessionStorage.setItem('user', userInfo.account)
+          router.push('/')
+        }
       }).catch((res) => {
-        alert(res)
+        console.log(res)
       })
     },
     refreshCaptcha: function() {
